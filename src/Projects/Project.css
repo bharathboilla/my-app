@@ -1,0 +1,98 @@
+.Main{
+    display: inline;
+    padding-left: 100px;
+    justify-content: space-between;
+}
+.console{
+    padding-left: 1rem;
+   padding-top: 1rem;
+   align-items: center;
+   justify-content: center;
+}
+.console ul{
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex; /* Add display flex */
+    justify-content: center;
+}
+.table li{ 
+    
+    padding: 5px 30px 5px  30px;
+     background-color: #151515;
+    
+}
+.table a{
+    text-decoration: none;
+    color: aliceblue;
+
+}
+.table a:hover{
+    color: black;
+    background-color: aliceblue;
+    border-radius: 10px;
+    border: 20px;
+}
+.photoblog h5 {
+    background-color: #151515;
+}
+.sections{
+    display: flex;
+    padding-left: 50p;
+}
+.sections{
+    display: flex;
+}
+.PhotoSections{
+    display: flex;
+    padding-top:100px;
+}
+.PhotoSections section{
+    padding: 40px;
+}
+.sections img{
+    padding-top: 50px;
+    width: 200px;
+    height: 300px;
+    filter: brightness(0.7);
+}
+.photoblog1{
+    background-color: #151515;
+}
+.photoblog1:hover img{
+    filter: brightness(1.0);
+    width: 210px;
+    height: 310px;
+}
+.photoblog2:hover img{
+    filter: brightness(1.0);
+    width: 210px;
+    height: 310px;
+}
+.photoblog3:hover img{
+    filter: brightness(1.0);
+    width: 210px;
+    height: 310px;
+}
+.photoblog4:hover img{
+    filter: brightness(1.0);
+    width: 210px;
+    height: 310px;
+}
+.photoblog5:hover img{
+    filter: brightness(1.0);
+    width: 210px;
+    height: 310px;
+}
+@media screen and (max-width:786px) {
+    .main{
+        padding-right: 0.5rem;
+    }
+}
+
+@media screen and (max-width:576px) {
+    .main{
+        flex-direction: column;
+        align-items: stretch;
+    }
+}

@@ -1,48 +1,166 @@
-.container{
-    display: flex;
-   
+.container {
+    display:flex;
+    justify-content: center;
     align-items: center;
-    justify-content:left;
-    padding-top: 2%;
+    padding-top: 5%;
+
 }
-.main-img{
-    padding-left: 200px;
-    padding-top: 250px;
+
+.main-img {
+    padding-top: 160px;
     
 }
-.text-box{
+
+.text-box {
     padding-left: 100px;
 }
-.Error-msg{
+
+.Error-msg {
     padding-left: 40px;
     padding-top: 200px;
 }
-.sections{
-    
+
+
+.sections {
     padding-left: 40px;
-    .text-box{
-        
-        padding: 3px;
-    }
-
-}    
-.sections , h4{
-    width: fit-content;
-    border-radius: 7px;
-    padding-left: 13px;
-    display: flex;
+    padding-right: 40px;
+    border-radius: 16px;   
+}
+.sections h4{
     background-color: #151515;
-    
+    border-radius: 20px;
+    padding: 10px;
 }
-.sections , button{
+.section{
+    padding-left: 20px;
+}
+.sections .text-box {
+    padding: 3px;
+}
+/* .sections, h4 {
+    width: fit-content;
+    border-radius: 16px;
+    padding-left: 13px;
+    display: flex;   
+} */
 
+.sections button {
     color: aliceblue;
-    background-color: black;
-
+    background-color:transparent;
+    border: none;
 }
-.note {
+/* .main-note{
+    background-color: #151515;
+    align-items: center;
+    border-radius: 16px ;
+    text-decoration: none;
+    
+} */
+
+
+.main-note {
+    background-color: #151515;
+    padding: 20px;
+
+    border-radius: 8px;
+    max-width: 600px;
+    margin: auto;
+    color: #fff;
+}
+.note{
+    margin: 10px;
+}
+
+.note h6 {
+    margin: 0;
+    color: #fff; 
+    font-size: 10px;
+}
+
+.note-content h4 {
+    margin: 0;
+    color: #fff;
+    line-height: 1.5; 
+    font-size: 14px;
+}
+
+.note-content a {
+    color: #1e90ff; 
+    text-decoration: none;
+}
+
+
+/* .note {
     background-color: #151515;
     border-radius: 10px;
-    padding-left: 19px;
     width: 50vw;
+    padding-left: 30px;
+    
+}
+.note-content{
+    padding-left: 30px;
+
+} */
+
+@media screen and (max-width: 786px) {
+    .container {
+        padding: 0.5rem;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .main-img {
+        padding-left: 100px;
+        padding-top: 150px;
+        flex-direction: column;
+    }
+
+    .text-box {
+        padding-left: 50px;
+    }
+
+    .Error-msg {
+        padding-left: 20px;
+        padding-top: 100px;
+    }
+
+    .sections {
+        padding-left: 20px;
+    }
+
+    .note {
+        width: 70vw;
+    }
+}
+
+
+@media screen and (max-width: 576px){
+    .container {
+        padding: 1.5rem;
+     
+    }
+
+    .main-img {
+        padding-left: 50px;
+        padding-top: 100px;
+        
+    }
+
+    .text-box {
+        padding-left: 20px;
+    }
+
+    .Error-msg {
+        padding-left: 10px;
+        padding-top: 50px;
+    }
+
+    .sections {
+        padding-left: 10px;
+    }
+
+    .note {
+        width: 90vw;
+        padding-left: 10px;
+    }
 }

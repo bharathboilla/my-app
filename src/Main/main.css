@@ -1,166 +1,162 @@
 .container {
-    display:flex;
+    display: flex;
     justify-content: center;
     align-items: center;
     padding-top: 5%;
 
-}
-
-.main-img {
-    padding-top: 160px;
-    
-}
-
-.text-box {
-    padding-left: 100px;
-}
-
-.Error-msg {
-    padding-left: 40px;
-    padding-top: 200px;
-}
-
-
-.sections {
-    padding-left: 40px;
-    padding-right: 40px;
-    border-radius: 16px;   
-}
-.sections h4{
-    background-color: #151515;
-    border-radius: 20px;
-    padding: 10px;
-}
-.section{
-    padding-left: 20px;
-}
-.sections .text-box {
-    padding: 3px;
-}
-/* .sections, h4 {
-    width: fit-content;
-    border-radius: 16px;
-    padding-left: 13px;
-    display: flex;   
-} */
-
-.sections button {
-    color: aliceblue;
-    background-color:transparent;
-    border: none;
-}
-/* .main-note{
-    background-color: #151515;
-    align-items: center;
-    border-radius: 16px ;
-    text-decoration: none;
-    
-} */
-
-
-.main-note {
-    background-color: #151515;
-    padding: 20px;
-
-    border-radius: 8px;
-    max-width: 600px;
-    margin: auto;
-    color: #fff;
-}
-.note{
-    margin: 10px;
-}
-
-.note h6 {
-    margin: 0;
-    color: #fff; 
-    font-size: 10px;
-}
-
-.note-content h4 {
-    margin: 0;
-    color: #fff;
-    line-height: 1.5; 
-    font-size: 14px;
-}
-
-.note-content a {
-    color: #1e90ff; 
-    text-decoration: none;
-}
-
-
-/* .note {
-    background-color: #151515;
-    border-radius: 10px;
-    width: 50vw;
-    padding-left: 30px;
-    
-}
-.note-content{
-    padding-left: 30px;
-
-} */
-
-@media screen and (max-width: 786px) {
-    .container {
+    @media screen and (max-width: 786px) {
         padding: 0.5rem;
         align-items: center;
         justify-content: center;
     }
 
-    .main-img {
+    @media screen and (max-width: 576px) {
+        padding: 1.5rem;
+    }
+}
+
+.main-img {
+    padding-top: 160px;
+
+    @media screen and (max-width: 786px) {
         padding-left: 100px;
         padding-top: 150px;
         flex-direction: column;
     }
 
-    .text-box {
+    @media screen and (max-width: 576px) {
         padding-left: 50px;
-    }
-
-    .Error-msg {
-        padding-left: 20px;
         padding-top: 100px;
-    }
-
-    .sections {
-        padding-left: 20px;
-    }
-
-    .note {
-        width: 70vw;
     }
 }
 
+.text-box {
+    padding-left: 100px;
 
-@media screen and (max-width: 576px){
-    .container {
-        padding: 1.5rem;
-     
-    }
-
-    .main-img {
+    @media screen and (max-width: 786px) {
         padding-left: 50px;
-        padding-top: 100px;
-        
     }
 
-    .text-box {
+    @media screen and (max-width: 576px) {
         padding-left: 20px;
     }
+}
 
-    .Error-msg {
+.Error-msg {
+    padding-left: 40px;
+    padding-top: 200px;
+
+    @media screen and (max-width: 786px) {
+        padding-left: 20px;
+        padding-top: 100px;
+    }
+
+    @media screen and (max-width: 576px) {
         padding-left: 10px;
         padding-top: 50px;
     }
+}
 
-    .sections {
-        padding-left: 10px;
+.sections {
+    padding-left: 40px;
+    padding-right: 40px;
+    border-radius: 16px;
+
+    h4 {
+        background-color: #151515;
+        border-radius: 20px;
+        padding: 10px;
     }
 
-    .note {
-        width: 90vw;
+    .text-box {
+        padding: 3px;
+    }
+
+    button {
+        color: aliceblue;
+        background-color: transparent;
+        border: none;
+    }
+
+    @media screen and (max-width: 786px) {
+        padding-left: 20px;
+    }
+
+    @media screen and (max-width: 576px) {
         padding-left: 10px;
     }
 }
+
+.section {
+    padding-left: 20px;
+}
+
+.main-note {
+    background-color: #151515;
+    padding: 20px;
+    border-radius: 8px;
+    max-width: 600px;
+    margin: auto;
+    color: #fff;
+
+    .note {
+        margin: 10px;
+
+        h6 {
+            margin: 0;
+            color: #fff;
+            font-size: 10px;
+        }
+
+        .note-content {
+            h4 {
+                margin: 0;
+                color: #fff;
+                line-height: 1.5;
+                font-size: 14px;
+            }
+
+            a {
+                color: #1e90ff;
+                text-decoration: none;
+            }
+        }
+
+        @media screen and (max-width: 786px) {
+            width: 70vw;
+        }
+
+        @media screen and (max-width: 576px) {
+            width: 90vw;
+            padding-left: 10px;
+        }
+    }
+}
+
+/* Commented out styles */
+/*
+.sections, h4 {
+    width: fit-content;
+    border-radius: 16px;
+    padding-left: 13px;
+    display: flex;   
+}
+
+.main-note {
+    background-color: #151515;
+    align-items: center;
+    border-radius: 16px ;
+    text-decoration: none;
+}
+
+.note {
+    background-color: #151515;
+    border-radius: 10px;
+    width: 50vw;
+    padding-left: 30px;
+}
+
+.note-content {
+    padding-left: 30px;
+}
+*/

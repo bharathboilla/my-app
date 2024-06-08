@@ -1,6 +1,7 @@
 import React from 'react'
 import velogo from '../../Assets/Navbar/VE logo_white 2.svg'
 import style from './Text.module.scss'
+import Glogo from '../../Assets/Homepage images/Group 3008.svg'
 
 function Text() {
 
@@ -12,6 +13,7 @@ function Text() {
          <h2>Your AI assistant for work</h2>
         </div>
         <div className={style.inputbox}>
+          <img src={Glogo} alt="Testingc" />
         <input type="text" placeholder='Email id'/>
         </div>
         <div className={style.gobutton}>

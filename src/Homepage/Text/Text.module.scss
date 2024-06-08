@@ -31,6 +31,7 @@
             display: flex;
             justify-content: center;
             align-items: center;
+        
 
             input {
                 background-color: inherit;
@@ -39,8 +40,10 @@
                 width: 80%;
                 color: #707070;
 
+
                 &::placeholder {
                     color: #707070;
+                    padding-left: 20px;
                 }
             }
         @media screen and (max-width:1440px) {

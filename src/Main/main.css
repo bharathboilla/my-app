@@ -133,30 +133,3 @@
     }
 }
 
-/* Commented out styles */
-/*
-.sections, h4 {
-    width: fit-content;
-    border-radius: 16px;
-    padding-left: 13px;
-    display: flex;   
-}
-
-.main-note {
-    background-color: #151515;
-    align-items: center;
-    border-radius: 16px ;
-    text-decoration: none;
-}
-
-.note {
-    background-color: #151515;
-    border-radius: 10px;
-    width: 50vw;
-    padding-left: 30px;
-}
-
-.note-content {
-    padding-left: 30px;
-}
-*/

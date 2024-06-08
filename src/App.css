@@ -1,3 +1,5 @@
 .containerr{
-  color:aliceblue
+  color:aliceblue;
+  display: flex;
+  align-items: center;
 }

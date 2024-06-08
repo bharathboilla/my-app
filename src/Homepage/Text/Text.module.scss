@@ -1,0 +1,109 @@
+.container {
+    display: flex;
+    height: 524px;
+    margin-top: 221px;
+    margin-left: 150px;
+    margin-right: 150px;
+    margin-bottom:-10rem;
+    
+    .welcome {
+        margin-right: 166px;
+        font-size: 2rem;
+        line-height: 0;
+        color: #E4E5E6;
+
+        img {
+            width: 56px;
+            height: 28px;
+        }
+        .message{
+            margin: 0%;
+            h2{
+                font-weight: lighter;
+                color: #535555;
+            }
+        }
+        .inputbox {
+            background-color: #1e1e1f;
+            height: 44px;
+            width: 60%;   
+            border-radius: 20px;  
+            display: flex;
+            justify-content: center;
+            align-items: center;
+
+            input {
+                background-color: inherit;
+                outline: none;
+                border: none;
+                width: 80%;
+                color: #707070;
+
+                &::placeholder {
+                    color: #707070;
+                }
+            }
+        @media screen and (max-width:1440px) {
+            .welcome{
+                padding-right: 1rem;
+            }
+        @media screen and (max-width:0.5rem) {
+            .welcome{
+                // padding-right: ;
+            }
+        }
+        }
+        } 
+        .gobutton{
+            margin-top: 1%;
+            background-color: transparent;
+            display: flex;
+            align-items: center;
+            border: 2px solid  #1e1e1f;
+            height: 44px;
+            width: 60%;   
+            border-radius: 20px; 
+
+            button{
+                background-color: inherit;
+                color:  #555555;
+                padding-left: 45%;
+            }
+            
+        }      
+    }
+    .role{
+        color: #D8D8D8;
+        line-height:0.5;
+
+        h2{
+            font-size: 2rem;
+            font-weight: lighter;
+        }
+        .leftname{
+            margin-left: 8rem;
+            
+            h1{
+                font-size: 50px;
+                
+            }
+        
+        }
+        .middlename{
+            margin-left: 10rem;
+
+            h2{
+                font-size: 2rem;
+                font-weight: lighter;
+            }
+        }
+        .rightname{
+            margin: 0%;
+
+            h1{
+                font-size: 50px;
+                
+            }
+        }
+    }  
+}

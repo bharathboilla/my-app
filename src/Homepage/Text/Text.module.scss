@@ -1,10 +1,7 @@
 .container {
     display: flex;
     height: 524px;
-    margin-top: 221px;
-    margin-left: 150px;
-    margin-right: 150px;
-    margin-bottom:-10rem;
+    margin: 221px 150px -10rem 150px;
     
     .welcome {
         margin-right: 166px;
@@ -16,22 +13,24 @@
             width: 56px;
             height: 28px;
         }
-        .message{
-            margin: 0%;
-            h2{
+
+        .message {
+            margin: 0;
+
+            h2 {
                 font-weight: lighter;
                 color: #535555;
             }
         }
+
         .inputbox {
             background-color: #1e1e1f;
             height: 44px;
-            width: 60%;   
-            border-radius: 20px;  
+            width: 60%;
+            border-radius: 20px;
             display: flex;
             justify-content: center;
             align-items: center;
-        
 
             input {
                 background-color: inherit;
@@ -40,73 +39,227 @@
                 width: 80%;
                 color: #707070;
 
-
                 &::placeholder {
                     color: #707070;
                     padding-left: 20px;
                 }
             }
-        @media screen and (max-width:1440px) {
-            .welcome{
-                padding-right: 1rem;
-            }
-        @media screen and (max-width:0.5rem) {
-            .welcome{
-                // padding-right: ;
-            }
         }
-        }
-        } 
-        .gobutton{
+
+        .gobutton {
             margin-top: 1%;
             background-color: transparent;
             display: flex;
             align-items: center;
-            border: 2px solid  #1e1e1f;
+            border: 2px solid #1e1e1f;
             height: 44px;
-            width: 60%;   
-            border-radius: 20px; 
+            width: 60%;
+            border-radius: 20px;
 
-            button{
+            button {
                 background-color: inherit;
-                color:  #555555;
+                color: #555555;
                 padding-left: 45%;
             }
-            
-        }      
+        }
     }
-    .role{
-        color: #D8D8D8;
-        line-height:0.5;
 
-        h2{
+    .role {
+        color: #D8D8D8;
+        line-height: 0.5;
+
+        h2 {
             font-size: 2rem;
             font-weight: lighter;
         }
-        .leftname{
+
+        .leftname {
             margin-left: 8rem;
-            
-            h1{
+
+            h1 {
                 font-size: 50px;
-                
             }
-        
         }
-        .middlename{
+
+        .middlename {
             margin-left: 10rem;
 
-            h2{
+            h2 {
                 font-size: 2rem;
                 font-weight: lighter;
             }
         }
-        .rightname{
-            margin: 0%;
 
-            h1{
+        .rightname {
+            margin: 0;
+
+            h1 {
                 font-size: 50px;
-                
             }
         }
-    }  
+    }
+
+
+    // Media Queries
+
+    @media (max-width: 1634px) {
+        .welcome {
+            font-size: 1.5rem;
+            
+            .message h2 {
+                font-size: 1.2rem;
+            }
+
+            .inputbox,
+            .gobutton {
+                height: 40px;
+
+                button {
+                    padding-left: 40%;
+                }
+            }
+        }
+
+        .role {
+            h2 {
+                font-size: 1.5rem;
+            }
+
+            .leftname,
+            .middlename,
+            .rightname {
+                margin-left: 0;
+                text-align: center;
+                
+
+                h1 {
+                    font-size: 40px;
+                }
+            }
+        }
+    }
+    @media (max-width: 1200px) {
+        flex-direction: column;
+        align-items: center;
+        margin: 100px 50px;
+
+        .welcome {
+            margin-right: 0;
+            margin-bottom: 20px;
+        }
+
+        .inputbox,
+        .gobutton {
+            width: 100%;
+        }
+    }
+
+    @media (max-width: 768px) {
+        .welcome {
+            font-size: 1.5rem;
+            
+            .message h2 {
+                font-size: 1.2rem;
+            }
+
+            .inputbox,
+            .gobutton {
+                height: 40px;
+
+                button {
+                    padding-left: 40%;
+                }
+            }
+        }
+
+        .role {
+            h2 {
+                font-size: 1.5rem;
+            }
+
+            .leftname,
+            .middlename,
+            .rightname {
+                margin-left: 0;
+                text-align: center;
+                
+
+                h1 {
+                    font-size: 40px;
+                }
+            }
+        }
+    }
+
+    @media (max-width: 548px) {
+        .welcome {
+            font-size: 1.3rem;
+            
+            .message h2 {
+                font-size: 1.2rem;
+            }
+
+            .inputbox,
+            .gobutton {
+                height: 40px;
+
+                button {
+                    padding-left: 40%;
+                }
+            }
+        }
+
+        .role {
+            h2 {
+                font-size: 1.5rem;
+            }
+
+            .leftname,
+            .middlename,
+            .rightname {
+                margin-left: 0;
+                text-align: center;
+                
+
+                h1 {
+                    font-size: 30px;
+                }
+            }
+        }
+    }
+
+    @media (max-width: 480px) {
+        .welcome {
+            font-size: 1.2rem;
+            
+            .message h2 {
+                font-size: 1rem;
+            }
+
+            .inputbox,
+            .gobutton {
+                height: 35px;
+
+                button {
+                    padding-left: 35%;
+                }
+            }
+        }
+
+        .role {
+            h2 {
+                font-size: 1.2rem;
+                line-height: 2;
+                margin-bottom: 10px;
+            }
+
+            .leftname,
+            .middlename,
+            .rightname {
+                h1 {
+                    font-size: 0px;
+                }
+            }
+        }
+    }
 }

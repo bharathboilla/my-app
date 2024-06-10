@@ -1,8 +1,9 @@
 {
   "files": {
-    "main.css": "/my-app/static/css/main.6892022a.css",
-    "main.js": "/my-app/static/js/main.a26b0470.js",
+    "main.css": "/my-app/static/css/main.a1455aba.css",
+    "main.js": "/my-app/static/js/main.70cdadef.js",
     "static/media/Frame 2997.svg": "/my-app/static/media/Frame 2997.1efbaf84a17f90f8f525ce948ada5966.svg",
+    "static/media/Group 3008.svg": "/my-app/static/media/Group 3008.1206f6071f081b53bb17fe87bbdb8920.svg",
     "static/media/VE logo_white 2.svg": "/my-app/static/media/VE logo_white 2.c666d0bee978401d078f90e5a6cc4093.svg",
     "static/media/set-illustrations-business-office-people-working-table-with-laptop-issues-solving-missing-files-job-is-done-unread-messages-process-work-icons-men-women_188928-41.avif": "/my-app/static/media/set-illustrations-business-office-people-working-table-with-laptop-issues-solving-missing-files-job-is-done-unread-messages-process-work-icons-men-women_188928-41.45047fa27f19e9ba258a.avif",
     "static/media/download (1).jpeg": "/my-app/static/media/download (1).4a822bf8523385a4f183.jpeg",
@@ -10,11 +11,11 @@
     "index.html": "/my-app/index.html",
     "static/media/Frame 427321518.svg": "/my-app/static/media/Frame 427321518.4cfc9dc97bab60e89209b9188b6aed63.svg",
     "static/media/Vector.svg": "/my-app/static/media/Vector.71d03dc7b86f41bc07a86ead5999ae1b.svg",
-    "main.6892022a.css.map": "/my-app/static/css/main.6892022a.css.map",
-    "main.a26b0470.js.map": "/my-app/static/js/main.a26b0470.js.map"
+    "main.a1455aba.css.map": "/my-app/static/css/main.a1455aba.css.map",
+    "main.70cdadef.js.map": "/my-app/static/js/main.70cdadef.js.map"
   },
   "entrypoints": [
-    "static/css/main.6892022a.css",
-    "static/js/main.a26b0470.js"
+    "static/css/main.a1455aba.css",
+    "static/js/main.70cdadef.js"
   ]
 }

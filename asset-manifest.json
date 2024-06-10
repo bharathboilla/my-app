@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/my-app/static/css/main.a1455aba.css",
-    "main.js": "/my-app/static/js/main.70cdadef.js",
+    "main.css": "/my-app/static/css/main.d6011f5f.css",
+    "main.js": "/my-app/static/js/main.a2c97e59.js",
     "static/media/Frame 2997.svg": "/my-app/static/media/Frame 2997.1efbaf84a17f90f8f525ce948ada5966.svg",
     "static/media/Group 3008.svg": "/my-app/static/media/Group 3008.1206f6071f081b53bb17fe87bbdb8920.svg",
     "static/media/VE logo_white 2.svg": "/my-app/static/media/VE logo_white 2.c666d0bee978401d078f90e5a6cc4093.svg",
@@ -11,11 +11,11 @@
     "index.html": "/my-app/index.html",
     "static/media/Frame 427321518.svg": "/my-app/static/media/Frame 427321518.4cfc9dc97bab60e89209b9188b6aed63.svg",
     "static/media/Vector.svg": "/my-app/static/media/Vector.71d03dc7b86f41bc07a86ead5999ae1b.svg",
-    "main.a1455aba.css.map": "/my-app/static/css/main.a1455aba.css.map",
-    "main.70cdadef.js.map": "/my-app/static/js/main.70cdadef.js.map"
+    "main.d6011f5f.css.map": "/my-app/static/css/main.d6011f5f.css.map",
+    "main.a2c97e59.js.map": "/my-app/static/js/main.a2c97e59.js.map"
   },
   "entrypoints": [
-    "static/css/main.a1455aba.css",
-    "static/js/main.70cdadef.js"
+    "static/css/main.d6011f5f.css",
+    "static/js/main.a2c97e59.js"
   ]
 }

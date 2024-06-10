@@ -1,106 +1,156 @@
 .container {
-    display:flex;
+    display: flex;
     height: 524px;
     margin: 221px 150px -10rem 150px;
-    
+  
     .welcome {
-        margin-right: 166px;
+      margin-right: 166px;
+      font-size: 2rem;
+      line-height: 0;
+      color: #e4e5e6;
+  
+      img {
+        width: 56px;
+        height: 28px;
+      }
+  
+      .message {
+        margin: 0;
+  
+        h2 {
+          font-weight: lighter;
+          color: #535555;
+        }
+      }
+  
+      .inputbox {
+        position: relative; // Added
+        background-color: #1e1e1f;
+        height: 44px;
+        width: 60%;
+        border-radius: 20px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+  
+        input {
+          background-color: inherit;
+          outline: none;
+          border: 2px solid transparent; // Modified
+          width: 80%;
+          color: #707070;
+          padding-left: 20px; // Moved from placeholder
+  
+          &::placeholder {
+            color: #707070;
+          }
+        }
+  
+        .error {
+          position: absolute;
+          bottom: -20px;
+          left: 0;
+          color: red;
+          font-size: 0.8rem;
+        }
+  
+        &.error input {
+          border-color: red; // Added
+        }
+      }
+  
+      .gobutton {
+        margin-top: 1%;
+        background-color: transparent;
+        display: flex;
+        align-items: center;
+        border: 2px solid #1e1e1f;
+        height: 44px;
+        width: 60%;
+        border-radius: 20px;
+  
+        button {
+          background-color: inherit;
+          color: #555555;
+          padding-left: 45%;
+        }
+      }
+    }
+  
+    .role {
+      color: #d8d8d8;
+      line-height: 0.5;
+  
+      h2 {
         font-size: 2rem;
-        line-height: 0;
-        color: #E4E5E6;
-
-        img {
-            width: 56px;
-            height: 28px;
+        font-weight: lighter;
+      }
+  
+      .leftname {
+        margin-left: 8rem;
+  
+        h1 {
+          font-size: 50px;
         }
+      }
+  
+      .middlename {
+        margin-left: 10rem;
+  
+        h2 {
+          font-size: 2rem;
+          font-weight: lighter;
+        }
+      }
+  
+      .rightname {
+        margin: 0;
+  
+        h1 {
+          font-size: 50px;
+        }
+      }
+    }
+  
+    // Media Queries...
 
-        .message {
-            margin: 0;
-
-            h2 {
-                font-weight: lighter;
-                color: #535555;
+    @media (max-width: 1761px) {
+        .welcome {
+            font-size: 1.5rem;
+            
+            .message h2 {
+                font-size: 1.2rem;
             }
-        }
 
-        .inputbox {
-            background-color: #1e1e1f;
-            height: 44px;
-            width: 60%;
-            border-radius: 20px;
-            display: flex;
-            justify-content: center;
-            align-items: center;
+            .inputbox,
+            .gobutton {
+                height: 40px;
+                width: 300px;
 
-            input {
-                background-color: inherit;
-                outline: none;
-                border: none;
-                width: 80%;
-                color: #707070;
-
-                &::placeholder {
-                    color: #707070;
-                    padding-left: 20px;
+                button {
+                    padding-left: 40%;
                 }
             }
         }
 
-        .gobutton {
-            margin-top: 1%;
-            background-color: transparent;
-            display: flex;
-            align-items: center;
-            border: 2px solid #1e1e1f;
-            height: 44px;
-            width: 60%;
-            border-radius: 20px;
-
-            button {
-                background-color: inherit;
-                color: #555555;
-                padding-left: 45%;
-            }
-        }
-    }
-
-    .role {
-        color: #D8D8D8;
-        line-height: 0.5;
-
-        h2 {
-            font-size: 2rem;
-            font-weight: lighter;
-        }
-
-        .leftname {
-            margin-left: 8rem;
-
-            h1 {
-                font-size: 50px;
-            }
-        }
-
-        .middlename {
-            margin-left: 10rem;
-
+        .role {
             h2 {
-                font-size: 2rem;
-                font-weight: lighter;
+                font-size: 1.5rem;
             }
-        }
 
-        .rightname {
-            margin: 0;
+            .leftname,
+            .middlename,
+            .rightname {
+                margin-left: 0;
+                text-align: center;
+                
 
-            h1 {
-                font-size: 50px;
+                h1 {
+                    font-size: 40px;
+                }
             }
         }
     }
-
-
-    // Media Queries
 
     @media (max-width: 1634px) {
         .welcome {
@@ -113,6 +163,7 @@
             .inputbox,
             .gobutton {
                 height: 40px;
+                width: 300px;
 
                 button {
                     padding-left: 40%;
@@ -262,4 +313,78 @@
             }
         }
     }
-}
+    @media (max-width: 400px) {
+        .welcome {
+            font-size: 1.1rem;
+            
+            .message h2 {
+                font-size: 1rem;
+            }
+
+            .inputbox,
+            .gobutton {
+                height: 35px;
+                width:13rem;
+
+                button {
+                    padding-left: 35%;
+                }
+            }
+        }
+
+        .role {
+            h2 {
+                font-size: 1.2rem;
+                line-height: 2;
+                margin-bottom: 10px;
+            }
+
+            .leftname,
+            .middlename,
+            .rightname {
+                h1 {
+                    font-size: 20px;
+                }
+            }
+        }
+    }
+    @media (max-width: 315px) {
+        .welcome {
+            font-size: 1.2rem;
+            
+            .message h2 {
+                font-size: 1rem;
+            }
+
+            .inputbox,
+            .gobutton {
+                height: 35px;
+
+                button {
+                    padding-left: 35%;
+                }
+            }
+        }
+
+        .role {
+            h2 {
+                font-size: 16px;
+                line-height: 2;
+                margin-bottom: 10px;
+            }
+
+            .leftname,
+            .middlename,
+            .rightname {
+                h1 {
+                    font-size: 16px;
+                }
+            }
+        }
+    }
+    
+  }
+  
+  
+  
+  
